@@ -1,0 +1,13 @@
+python newinference.py \
+--model_name "sdxl" \
+--control_types "depth" "canny" \
+--local_checkpoint_path "/xxx" \
+--eval_input_type "images" \
+--eval_input_type "images" \
+--evaluation_input_folder "assets/evaluation/images" \
+--extract_control_conditions True \
+--num_inference_steps 50 \
+--control_guidance_end 1 \
+--height 1024 \
+--width 1024  \
+--global_step xxx

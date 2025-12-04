@@ -1,0 +1,11 @@
+accelerate launch newtrain.py \
+--yaml_file configs/sdxl_train_multi_condition.yaml \
+--evaluation_input_folder "assets/evaluation/images" \
+--evaluation_prompt_file "captions.json" \
+--validate_every_steps 2000 \
+--num_inference_steps 50 \
+--control_guidance_end 1 \
+--snr_gamma 5.0 \
+--save_n_steps 2000 \
+--save_starting_step 2000 \
+--extract_control_conditions True
